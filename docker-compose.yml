@@ -1,0 +1,8 @@
+services:
+  web:
+    image: php:8.2-apache
+    container_name: portfolio-alexandra
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src:/var/www/html

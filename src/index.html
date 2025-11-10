@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Alexandra Sofronie</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <script src="scripts.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      emailjs.init("FdIubP9kJ3tBY_jLE");
+    </script>
+  </head>
+  <body>
+      <!--HEADER--->
+      <div class="contenedor-header">
+        <header>
+          <div class="logo">
+            <a href="#">Alexandra</a>
+          </div>
+          <nav id="nav">
+            <ul>
+              <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+              <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+              <li><a href="#habilidades" onclick="seleccionar()">HABILIDADES</a></li>
+              <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+              <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+              <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+            </ul>
+          </nav>
+          <div class="nav-responsive" onclick="mostrarMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </header>
+      </div>
+
+      <!--INICIO-->
+      <section id="inicio" class="inicio fadeInUp">
+        <div class="contenido-banner">
+          <div class="contenedor-img">
+            <img src="img/me2.0.JPG" alt="">
+          </div>
+
+          <h1 class="typing-text" data-text="ALEXANDRA SOFRONIE"></h1>
+          <h2>Estudiante de DAM</h2>
+
+          <div class="redes">
+          <a href="https://es.linkedin.com/in/alexandra-teodora-sofronie-3bbb36161" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/alesa_ts97/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/AlexandraSofronie" target="_blank"><i class="fa-brands fa-github"></i></a>
+          </div>
+      </div>
+    </section>
+
+    <!--SOBRE MI-->
+    <section id="sobremi" class="sobremi fadeInLeft">
+      <div class="contenido-seccion">
+        <h2>Sobre mí</h2>
+        <p>Actualmente estudio Desarrollo de Aplicaciones Multiplataforma. Me apasiona el aprendizaje continuo, la tecnología y la resolución creativa de problemas. Busco oportunidades donde pueda crecer profesionalmente y aportar valor con compromiso, empatía y adaptabilidad.</p>
+        <div class="fila">
+          <div class="columna">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Cumpleaños</strong>
+                14-12-1997
+              </li>
+              <li>
+                <strong>Email</strong>                  
+                alesaclash97@gmail.com
+              </li>
+              <li>
+                <strong>Teléfono</strong>
+                663698648
+              </li>
+              <li>
+                <strong>Dirección</strong>                    
+                Barcelona, 08016
+              </li>
+            </ul>
+          </div>
+          <div class="columna">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="intereses"><i class="fa-solid fa-gamepad"></i><span>JUEGOS</span></div>
+              <div class="intereses"><i class="fa-solid fa-headphones"></i><span>MÚSICA</span></div>
+              <div class="intereses"><i class="fa-solid fa-plane"></i><span>VIAJAR</span></div>
+              <div class="intereses"><i class="fa-regular fa-futbol"></i><span>FÚTBOL</span></div>
+            </div>
+          </div>    
+        </div>
+        <a href="Alexandra_Sofronie_CV.pdf" download="Alexandra_Sofronie_CV">
+          <button>
+            Descargar CV
+            <i class="fa-solid fa-download"></i>
+            <span class="cajitaCV"></span>
+          </button>  
+        </a>
+      </div>
+    </section>
+
+    <!--HABILIDADES-->
+    <section id="habilidades" class="habilidades fadeInUp">
+      <div class="contenido-seccion">
+        <h2>Habilidades</h2>
+        <div class="fila">
+          <div class="columna">
+            <h3>Técnicas</h3>
+
+            <div class="habilidad"><span>JavaScript</span><div class="barra-ptg"><div class="progreso javascript"><span>70%</span></div></div></div>
+            <div class="habilidad"><span>HTML & CSS</span><div class="barra-ptg"><div class="progreso htmlcss"><span>75%</span></div></div></div>
+            <div class="habilidad"><span>SQL</span><div class="barra-ptg"><div class="progreso sql"><span>70%</span></div></div></div>
+            <div class="habilidad"><span>Python</span><div class="barra-ptg"><div class="progreso python"><span>60%</span></div></div></div>
+            <div class="habilidad"><span>PHP</span><div class="barra-ptg"><div class="progreso php"><span>30%</span></div></div></div>
+            <div class="habilidad"><span>Kotlin</span><div class="barra-ptg"><div class="progreso kotlin"><span>40%</span></div></div></div>
+            <div class="habilidad"><span>Android Studio</span><div class="barra-ptg"><div class="progreso androidstudio"><span>35%</span></div></div></div>
+          </div>
+
+          <div class="columna">
+            <h3>Profesionales</h3>
+            <ul class="softskills">
+              <li><i class="fa-solid fa-heart"></i> Empatía</li>
+              <li><i class="fa-solid fa-bolt"></i> Aprendizaje rápido</li>
+              <li><i class="fa-solid fa-repeat"></i> Adaptabilidad</li>
+              <li><i class="fa-solid fa-users"></i> Trabajo en equipo</li>
+              <li><i class="fa-solid fa-comments"></i> Buena comunicación</li>
+              <li><i class="fa-solid fa-puzzle-piece"></i> Resolución de problemas</li>
+              <li><i class="fa-solid fa-clock"></i> Gestión eficiente del tiempo</li>
+            </ul>
+          </div>
+
+          <div class="columna">
+            <h3>Idiomas</h3>
+            <div class="habilidad"><span>Rumano</span><div class="barra-ptg"><div class="progreso rumano"><span>100%</span></div></div></div>
+            <div class="habilidad"><span>Castellano</span><div class="barra-ptg"><div class="progreso castellano"><span>100%</span></div></div></div>
+            <div class="habilidad"><span>Catalán</span><div class="barra-ptg"><div class="progreso catalan"><span>80%</span></div></div></div>
+            <div class="habilidad"><span>Inglés</span><div class="barra-ptg"><div class="progreso ingles"><span>85%</span></div></div></div>
+            <div class="habilidad"><span>Francés</span><div class="barra-ptg"><div class="progreso frances"><span>50%</span></div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--CURRICULUM-->
+    <section id="curriculum" class="curriculum fadeInRight">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="columna izquierda">
+            <h3>Formación académica</h3>
+            <div class="items izq">
+              <h4>Desarrollo de Aplicaciones Multiplataforma</h4>
+              <span class="donde">La Salle Gràcia | Barcelona</span>
+              <span class="fecha">Septiembre 2024 - Actualidad</span>
+            </div>
+            <div class="items izq">
+              <h4>Grado en Contabilidad y Finanzas</h4>
+              <span class="donde">Universidad Autónoma de Barcelona</span>
+              <span class="fecha">2016 - 2021</span>
+            </div>
+            <div class="items izq">
+              <h4>Bachillerato Científico</h4>
+              <span class="donde">Institut Pedralbes | Barcelona</span>
+              <span class="fecha">2014 - 2016</span>
+            </div>
+          </div>
+
+          <div class="columna derecha">
+            <h3>Experiencia Laboral</h3>
+            <div class="items drcha">
+              <h4>Recepcionista</h4>
+              <span class="donde">Hotel & Spa Villa Olimpica Suites | Barcelona</span>
+              <span class="fecha">Enero 2024 - Actualidad</span>
+            </div>
+            <div class="items drcha">
+              <h4>Camarera</h4>
+              <span class="donde">Hotel & Spa Villa Olimpica Suites | Barcelona</span>
+              <span class="fecha">Junio 2018 - Diciembre 2023</span>
+            </div>
+            <div class="items drcha">
+              <h4>Prácticas en asuntos financieros</h4>
+              <span class="donde">SIMALAIA S.L. | Barcelona</span>
+              <span class="fecha">Febrero 2021 - Julio 2021</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--PORTFOLIO-->
+    <section id="portfolio" class="portfolio fadeInUp">
+      <div class="contenido-seccion">
+        <h2>Porfolio</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img src="img/biblioteca.jpg">
+            <a href="https://github.com/LaSalleGracia-Programacio/24-25-pr-ctica-i-equipo-12/blob/main/src/M03_UF1_PR01_SofronieAlexandra_CorbellaArnau.java" target="_blank">
+              <div class="transicion">
+                <h3>Gestión de una biblioteca</h3>
+                <p>Proyecto para el instituto</p>
+                <p>Haz click para ver el código</p>
+              </div>
+            </a>
+          </div>
+          <div class="proyecto">
+            <img src="img/juego.png">
+            <a href="https://github.com/La-Salle-Gracia-FP/24-25-python-game-ALESA97/blob/main/game.py" target="_blank">
+              <div class="transicion">
+                <h3>Juego Breakout</h3>
+                <p>Proyecto para el instituto</p>
+                <p>Haz click para ver el código</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--CONTACTO-->
+    <section id="contacto" class="contacto fadeInUp">
+      <div class="contenido-seccion">
+        <h2>Contacto</h2>
+        <div class="fila">
+          <!-- Formulario -->
+          <div class="columna">
+            <h3>¿Te gusta lo que ves?</h3>
+            <p>Envíame un mensaje y estaré encantada de responderte.</p>
+            <form id="formulario-contacto" class="formulario">
+              <div class="input-group">
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+              </div>
+              <div class="input-group">
+                <input type="email" id="email" name="email" placeholder="Tu email" required>
+              </div>
+              <div class="input-group">
+                <input type="text" id="asunto" name="asunto" placeholder="Asunto" required>
+              </div>
+              <div class="input-group">
+                <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" rows="6" required></textarea>
+              </div>
+              <button type="submit">
+                Enviar Mensaje
+                <i class="fa-solid fa-paper-plane"></i>
+                <span class="cajitaCV"></span>
+              </button>
+              <div id="mensaje-resultado" style="display: none; margin-top: 15px; padding: 10px; border-radius: 5px;"></div>
+            </form>
+          </div>
+          <!-- Información de contacto -->
+          <div class="columna">
+            <h3>Información de contacto</h3>
+            <div class="info-contacto">
+              <div class="item-contacto">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                  <strong>Email</strong>
+                  <span>alesaclash97@gmail.com</span>
+                </div>
+              </div>
+              <div class="item-contacto">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                  <strong>Teléfono</strong>
+                  <span>663698648</span>
+                </div>
+              </div>
+              <div class="item-contacto">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <strong>Ubicación</strong>
+                  <span>Barcelona, 08016</span>
+                </div>
+              </div>
+              <div class="item-contacto">
+                <i class="fa-solid fa-globe"></i>
+                <div>
+                  <strong>Idiomas</strong>
+                  <span>Rumano, Español, Catalán, Inglés</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="redes-contacto">
+              <h4>Sígueme en:</h4>
+              <div class="enlaces-redes">
+                <a href="https://es.linkedin.com/in/alexandra-teodora-sofronie-3bbb36161" target="_blank">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/AlexandraSofronie" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/alesa_ts97/" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!--FOOTER-->
+    <footer>
+      <a href="#inicio" class="irInicio"><i class="fa-solid fa-angle-up"></i></a>
+    </footer>
+  </body>
+</html>

@@ -291,9 +291,10 @@ html {
 }
 
 .habilidades h3 {
+  font-family: 'Righteous';
   color: var(--azul-claro);
-  margin-bottom: 20px;
-  font-size: 24px;
+  margin-bottom: 25px;
+  font-size: 28px;
 }
 
 .habilidad > span {
@@ -309,6 +310,7 @@ html {
   overflow: hidden;
   width: 80%;
   position: relative;
+  margin-bottom: 10px;
 }
 
 .progreso {
@@ -337,7 +339,7 @@ html {
 }
 
 .softskills li {
-  margin: 12px 0;
+  margin-bottom: 20px;
   font-size: 18px;
   display: flex;
   align-items: center;
@@ -365,6 +367,13 @@ html {
   font-family: 'Righteous';
 }
 
+.curriculum h3 {
+  font-size: 28px;
+  color: var(--azul-claro);
+  margin-bottom: 25px;
+  font-family: 'Righteous';
+}
+
 .curriculum .fila {
   display: flex;
   flex-wrap: wrap;
@@ -375,6 +384,10 @@ html {
   flex: 1;
   min-width: 320px;
   margin: 20px;
+}
+
+.curriculum .fila .derecha {
+    text-align: right;
 }
 
 .curriculum .items {
@@ -527,14 +540,14 @@ html {
 .contacto button {
   cursor: pointer;
   background-color: transparent;
-  border: 2px solid var(--acento);
+  border: 1px solid var(--acento);
   border-radius: 10px;
   padding: 12px 30px;
   color: var(--texto);
   font-size: 16px;
   position: relative;
-  overflow: hidden;
   transition: 0.3s;
+  z-index: 10;
 }
 
 .contacto button:hover {
@@ -543,7 +556,8 @@ html {
 
 .contacto button .cajitaCV {
   position: absolute;
-  background-color: var(--azul-medio);
+  border-radius: 10px;
+  background-color: var(--azul-claro);
   width: 0%;
   height: 100%;
   top: 0;
@@ -554,6 +568,9 @@ html {
 
 .contacto button:hover .cajitaCV {
   width: 100%;
+  transition: 1s;
+  border: 1px solid var(--azul-claro);
+  box-shadow: 0 4px 12px rgba(46, 139, 192, 0.4);
 }
 
 /* Layout del contacto - Formulario izquierda, Info derecha */
@@ -586,6 +603,11 @@ html {
   margin-bottom: 30px;
 }
 
+.contacto p {
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+
 /* Información de contacto */
 .info-contacto {
   margin-bottom: 40px;
@@ -603,6 +625,11 @@ html {
   font-size: 20px;
   margin-top: 2px;
   width: 20px;
+}
+  
+.contacto button:hover .cajitaCV {
+  width: 100%;
+  transition: 1s;
 }
 
 .item-contacto div {
@@ -649,6 +676,7 @@ html {
   background-color: var(--azul-claro);
   border-color: var(--azul-claro);
   transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(46, 139, 192, 0.4);
 }
 
 /* ======== FOOTER ======== */
